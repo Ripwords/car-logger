@@ -1,18 +1,13 @@
-FROM node:22-alpine as build
+FROM node:18-alpine AS build
 
-RUN npm i -g bun
+RUN npm i -g pnpm
 
 WORKDIR /app
-COPY package.json /app
-RUN bun i
 COPY . /app
+RUN pnpm i
+RUN pnpm build
 
-
-
-
-
-RUN bun build
-FROM gcr.io/distroless/nodejs:22 as prod
+FROM gcr.io/distroless/nodejs:18 AS prod
 WORKDIR /app
 COPY --from=build /app/.output/server /app/.output/server
 EXPOSE 3000/tcp
