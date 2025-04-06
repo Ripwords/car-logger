@@ -1,5 +1,6 @@
 import { betterAuth } from "better-auth"
 import { drizzleAdapter } from "better-auth/adapters/drizzle"
+import { passkey } from "better-auth/plugins/passkey"
 import { drizzle } from "drizzle-orm/node-postgres"
 import * as schema from "../database/schema"
 
@@ -11,4 +12,5 @@ export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "pg",
   }),
+  plugins: [passkey()],
 })

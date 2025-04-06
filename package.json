@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "db:push": "drizzle-kit push",
-    "auth:gen": "bunx @better-auth/cli@latest generate --config=./server/utils/auth.ts --output=./server/utils/auth-schema.ts -y",
+    "auth:gen": "bunx @better-auth/cli@latest generate --config=./server/utils/auth.ts --output=./server/utils/auth-schema.ts -y && bun db:push",
     "auth:secret": "bunx @better-auth/cli@latest secret"
   },
   "dependencies": {
