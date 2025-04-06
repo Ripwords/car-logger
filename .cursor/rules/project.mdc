@@ -1,0 +1,62 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Title: Car Maintenance Log Web App
+
+Description:
+A personal car maintenance tracking web application that allows users to manage multiple vehicles and log maintenance activities. The app includes dynamic components with sensible defaults and customization capabilities for car parts and services.
+
+Core Features:
+
+User Authentication (optional for personal use or expand to multi-user)
+
+Multiple Car Profiles:
+Users can add and manage multiple cars with details like make, model, year, and current mileage.
+
+Maintenance Categories:
+Predefined categories such as:
+
+Oil Change
+
+Tyres
+
+Brake Pads
+
+Car Arms
+
+General Inspection
+
+Battery, Fluids, etc.
+These should be editable and expandable by users.
+
+Maintenance Log:
+For each car, users can log:
+
+Service date
+
+Mileage at time of service
+
+Type of maintenance
+
+Notes or cost (optional)
+
+Dynamic Field Management:
+Users can add custom maintenance categories and edit/remove defaults if needed.
+
+Mileage Tracking:
+Ability to update car mileage independently of maintenance logs.
+
+Dashboard Overview:
+A high-level view showing recent maintenance logs, mileage summaries, and upcoming or recommended services.
+
+Nice-to-Have (Stretch Goals):
+
+Reminders based on mileage intervals (e.g., remind oil change every 10,000 km)
+
+PDF/CSV export of maintenance history
+
+Light/Dark mode
+
+Mobile-first responsive UI
