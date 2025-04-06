@@ -2,6 +2,17 @@
 
 <template>
   <div>
-    <h1>Login</h1>
+    <UCard>
+      <template #header>
+        <h1>Login</h1>
+      </template>
+
+      <USkeleton class="h-32" />
+      <UButton>Login</UButton>
+
+      <template #footer>
+        <USkeleton class="h-8" />
+      </template>
+    </UCard>
   </div>
 </template>
