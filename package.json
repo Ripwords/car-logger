@@ -8,6 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "db:reset": "bun ./seeds/reset.ts",
     "db:push": "drizzle-kit push --config=./config/drizzle.config.ts",
     "auth:gen": "bunx @better-auth/cli@latest generate --config=./server/utils/auth.ts --output=./server/utils/auth-schema.ts -y && bun db:push",
     "auth:secret": "bunx @better-auth/cli@latest secret"
@@ -20,15 +21,18 @@
     "@vueuse/nuxt": "13.0.0",
     "better-auth": "^1.2.5",
     "drizzle-orm": "^0.41.0",
+    "drizzle-zod": "^0.7.1",
     "eslint": "^9.0.0",
     "nuxt": "^3.16.2",
     "pg": "^8.14.1",
     "typescript": "^5.6.3",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.5.0",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/pg": "^8.11.11",
-    "drizzle-kit": "^0.30.6"
+    "drizzle-kit": "^0.30.6",
+    "drizzle-seed": "^0.3.1"
   }
 }

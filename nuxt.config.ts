@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     databaseUrl: "",
+    brevoKey: "",
   },
   css: ["~/assets/css/main.css"],
   modules: ["@nuxt/eslint", "@nuxt/test-utils", "@nuxt/ui", "@vueuse/nuxt"],

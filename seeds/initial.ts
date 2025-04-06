@@ -1,6 +1,6 @@
 import { drizzle } from "drizzle-orm/node-postgres"
 import { eq } from "drizzle-orm"
-import { user } from "../server/database/schema"
+import { user } from "../shared/database/schema"
 
 const db = drizzle(process.env.NUXT_DATABASE_URL!)
 

@@ -1,5 +1,5 @@
 import { drizzle } from "drizzle-orm/node-postgres"
-import * as schema from "../database/schema"
+import * as schema from "../../shared/database/schema"
 export { sql, eq, and, or } from "drizzle-orm"
 const config = useRuntimeConfig()
 
